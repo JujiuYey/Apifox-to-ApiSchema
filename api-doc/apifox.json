@@ -1,0 +1,1837 @@
+{
+
+  "apiCollection": [
+    {
+      "name": "根目录",
+      "auth": {},
+      "parentId": 0,
+      "serverId": "",
+      "description": "",
+      "identityPattern": {
+        "httpApi": {
+          "type": "methodAndPath",
+          "bodyType": "",
+          "fields": []
+        }
+      },
+      "preProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "postProcessors": [
+        {
+          "id": "inheritProcessors",
+          "type": "inheritProcessors",
+          "data": {}
+        }
+      ],
+      "inheritPostProcessors": {},
+      "inheritPreProcessors": {},
+      "items": [
+        {
+          "name": "部门管理",
+          "auth": {},
+          "parentId": 0,
+          "serverId": "",
+          "description": "",
+          "identityPattern": {
+            "httpApi": {
+              "type": "inherit",
+              "bodyType": "",
+              "fields": []
+            }
+          },
+          "preProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "postProcessors": [
+            {
+              "id": "inheritProcessors",
+              "type": "inheritProcessors",
+              "data": {}
+            }
+          ],
+          "inheritPostProcessors": {},
+          "inheritPreProcessors": {},
+          "items": [
+            {
+              "name": "分页列表",
+              "api": {
+                "id": "132057165",
+                "method": "get",
+                "path": "/system/deparment/page",
+                "parameters": {
+                  "path": [],
+                  "query": [
+                    {
+                      "name": "page",
+                      "required": false,
+                      "description": "页码",
+                      "type": "integer",
+                      "id": "aih9R0QUOe"
+                    },
+                    {
+                      "name": "pageSize",
+                      "required": false,
+                      "description": "每页记录数",
+                      "type": "integer",
+                      "id": "nFPAYXdugg"
+                    },
+                    {
+                      "name": "departmentName",
+                      "required": false,
+                      "description": "分类名称",
+                      "type": "string",
+                      "id": "LrjgigIrN9"
+                    }
+                  ],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {},
+                "commonParameters": {},
+                "responses": [
+                  {
+                    "id": "36723625",
+                    "name": "成功",
+                    "code": 200,
+                    "contentType": "json",
+                    "jsonSchema": {
+                      "$ref": "#/definitions/73369892",
+                      "description": ""
+                    }
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n  \"code\": 0,\n  \"message\": \"\",\n  \"data\": {\n    \"records\": [\n      {\n        \"id\": 0,\n        \"departmentName\": \"\",\n        \"description\": \"\",\n        \"createTime\": \"\",\n        \"updateTime\": \"\"\n      }\n    ],\n    \"total\": 0,\n    \"size\": 0,\n    \"current\": 0,\n    \"orders\": [\n      {\n        \"column\": \"\",\n        \"asc\": false\n      }\n    ],\n    \"optimizeCountSql\": false,\n    \"searchCount\": false,\n    \"optimizeJoinOfCountSql\": false,\n    \"countId\": \"\",\n    \"maxLimit\": 0\n  }\n}",
+                    "responseId": 36723625,
+                    "ordering": 1
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": []
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 0,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {},
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "添加",
+              "api": {
+                "id": "132057166",
+                "method": "post",
+                "path": "/system/deparment/add",
+                "parameters": {
+                  "path": [],
+                  "query": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {},
+                "commonParameters": {},
+                "responses": [
+                  {
+                    "id": "36723627",
+                    "name": "成功",
+                    "code": 200,
+                    "contentType": "json",
+                    "jsonSchema": {
+                      "$ref": "#/definitions/73369907",
+                      "description": ""
+                    }
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n  \"code\": 0,\n  \"message\": \"\",\n  \"data\": {}\n}",
+                    "responseId": 36723627,
+                    "ordering": 1
+                  }
+                ],
+                "requestBody": {
+                  "type": "application/json",
+                  "parameters": [],
+                  "jsonSchema": {
+                    "$ref": "#/definitions/73369908",
+                    "description": ""
+                  }
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 6,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {},
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "更新",
+              "api": {
+                "id": "132057167",
+                "method": "put",
+                "path": "/system/deparment/update",
+                "parameters": {
+                  "path": [],
+                  "query": [],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {},
+                "commonParameters": {},
+                "responses": [
+                  {
+                    "id": "36723629",
+                    "name": "成功",
+                    "code": 200,
+                    "contentType": "json",
+                    "jsonSchema": {
+                      "$ref": "#/definitions/73369907",
+                      "description": ""
+                    }
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n  \"code\": 0,\n  \"message\": \"\",\n  \"data\": {}\n}",
+                    "responseId": 36723629,
+                    "ordering": 1
+                  }
+                ],
+                "requestBody": {
+                  "type": "application/json",
+                  "parameters": [],
+                  "jsonSchema": {
+                    "$ref": "#/definitions/73369889",
+                    "description": ""
+                  }
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 12,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {},
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            },
+            {
+              "name": "删除",
+              "api": {
+                "id": "132057168",
+                "method": "delete",
+                "path": "/system/deparment/delete",
+                "parameters": {
+                  "path": [],
+                  "query": [
+                    {
+                      "name": "id",
+                      "required": true,
+                      "description": "",
+                      "type": "integer",
+                      "id": "1lNzF3vGKo"
+                    }
+                  ],
+                  "cookie": [],
+                  "header": []
+                },
+                "auth": {},
+                "commonParameters": {},
+                "responses": [
+                  {
+                    "id": "36723631",
+                    "name": "成功",
+                    "code": 200,
+                    "contentType": "json",
+                    "jsonSchema": {
+                      "$ref": "#/definitions/73369907",
+                      "description": ""
+                    }
+                  }
+                ],
+                "responseExamples": [
+                  {
+                    "name": "成功示例",
+                    "data": "{\n  \"code\": 0,\n  \"message\": \"\",\n  \"data\": {}\n}",
+                    "responseId": 36723631,
+                    "ordering": 1
+                  }
+                ],
+                "requestBody": {
+                  "type": "none",
+                  "parameters": []
+                },
+                "description": "",
+                "tags": [],
+                "status": "released",
+                "serverId": "",
+                "operationId": "",
+                "sourceUrl": "",
+                "ordering": 18,
+                "cases": [],
+                "mocks": [],
+                "customApiFields": "{}",
+                "advancedSettings": {},
+                "mockScript": {},
+                "codeSamples": [],
+                "commonResponseStatus": {},
+                "responseChildren": [],
+                "preProcessors": [],
+                "postProcessors": [],
+                "inheritPostProcessors": {},
+                "inheritPreProcessors": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "schemaCollection": [
+    {
+      "name": "根目录",
+      "items": [
+        {
+          "name": "Department",
+          "displayName": "",
+          "id": "#/definitions/73369889",
+          "description": "com.jujiu.entity.Department",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "departmentName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "部门名称"
+                },
+                "description": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "描述"
+                },
+                "createTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "创建时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "updateTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "更新时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                }
+              },
+              "x-apifox-orders": [
+                "id",
+                "departmentName",
+                "description",
+                "createTime",
+                "updateTime"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Role",
+          "displayName": "",
+          "id": "#/definitions/73369976",
+          "description": "com.jujiu.entity.Role",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "roleName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "角色名称"
+                },
+                "roleKey": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "角色key 唯一的英文名"
+                },
+                "description": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "描述"
+                },
+                "createTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "创建时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "updateTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "更新时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                }
+              },
+              "x-apifox-orders": [
+                "id",
+                "roleName",
+                "roleKey",
+                "description",
+                "createTime",
+                "updateTime"
+              ]
+            }
+          }
+        },
+        {
+          "name": "User",
+          "displayName": "",
+          "id": "#/definitions/73369979",
+          "description": "com.jujiu.entity.User",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "username": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "账号，登录名称"
+                },
+                "password": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "密码"
+                },
+                "realName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "真名"
+                },
+                "nickName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "花名"
+                },
+                "email": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "邮箱"
+                },
+                "phone": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "手机号码"
+                },
+                "openid": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "openid"
+                },
+                "departmentId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "所属部门"
+                },
+                "state": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "状态"
+                },
+                "workState": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "工作状态"
+                },
+                "entryTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "入职日期"
+                },
+                "createTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "创建时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "updateTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "更新时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                }
+              },
+              "x-apifox-orders": [
+                "id",
+                "username",
+                "password",
+                "realName",
+                "nickName",
+                "email",
+                "phone",
+                "openid",
+                "departmentId",
+                "state",
+                "workState",
+                "entryTime",
+                "createTime",
+                "updateTime"
+              ]
+            }
+          }
+        },
+        {
+          "name": "UserVo",
+          "displayName": "",
+          "id": "#/definitions/73369986",
+          "description": "com.jujiu.vo.UserVo",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "username": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "账号，登录名称"
+                },
+                "password": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "密码"
+                },
+                "realName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "真名"
+                },
+                "nickName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "花名"
+                },
+                "email": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "邮箱"
+                },
+                "phone": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "手机号码"
+                },
+                "openid": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "openid"
+                },
+                "departmentId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "所属部门"
+                },
+                "state": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "状态"
+                },
+                "workState": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "工作状态"
+                },
+                "entryTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "入职日期"
+                },
+                "createTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "创建时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "updateTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "更新时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "departmentName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "部门名称"
+                }
+              },
+              "x-apifox-orders": [
+                "id",
+                "username",
+                "password",
+                "realName",
+                "nickName",
+                "email",
+                "phone",
+                "openid",
+                "departmentId",
+                "state",
+                "workState",
+                "entryTime",
+                "createTime",
+                "updateTime",
+                "departmentName"
+              ]
+            }
+          }
+        },
+        {
+          "name": "UserRoleVo",
+          "displayName": "",
+          "id": "#/definitions/73369992",
+          "description": "com.jujiu.vo.UserRoleVo",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "userId": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "用户"
+                },
+                "roleId": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "角色"
+                },
+                "createTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "创建时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "updateTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "更新时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "username": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "用户名"
+                },
+                "realName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "真名"
+                },
+                "nickName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "花名"
+                },
+                "roleName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "角色名"
+                }
+              },
+              "x-apifox-orders": [
+                "id",
+                "userId",
+                "roleId",
+                "createTime",
+                "updateTime",
+                "username",
+                "realName",
+                "nickName",
+                "roleName"
+              ]
+            }
+          }
+        },
+        {
+          "name": "OrderItem",
+          "displayName": "",
+          "id": "#/definitions/73369890",
+          "description": "com.baomidou.mybatisplus.core.metadata.OrderItem",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "column": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "asc": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "column",
+                "asc"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Page«Department»",
+          "displayName": "",
+          "id": "#/definitions/73369891",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "records": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369889",
+                    "description": "com.jujiu.entity.Department"
+                  },
+                  "description": ""
+                },
+                "total": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "size": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "current": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "orders": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369890",
+                    "description": "com.baomidou.mybatisplus.core.metadata.OrderItem"
+                  },
+                  "description": ""
+                },
+                "optimizeCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "searchCount": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "optimizeJoinOfCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "countId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "maxLimit": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "records",
+                "total",
+                "size",
+                "current",
+                "orders",
+                "optimizeCountSql",
+                "searchCount",
+                "optimizeJoinOfCountSql",
+                "countId",
+                "maxLimit"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Page«Role»",
+          "displayName": "",
+          "id": "#/definitions/73369977",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "records": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369976",
+                    "description": "com.jujiu.entity.Role"
+                  },
+                  "description": ""
+                },
+                "total": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "size": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "current": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "orders": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369890",
+                    "description": "com.baomidou.mybatisplus.core.metadata.OrderItem"
+                  },
+                  "description": ""
+                },
+                "optimizeCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "searchCount": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "optimizeJoinOfCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "countId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "maxLimit": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "records",
+                "total",
+                "size",
+                "current",
+                "orders",
+                "optimizeCountSql",
+                "searchCount",
+                "optimizeJoinOfCountSql",
+                "countId",
+                "maxLimit"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Page«User»",
+          "displayName": "",
+          "id": "#/definitions/73369980",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "records": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369979",
+                    "description": "com.jujiu.entity.User"
+                  },
+                  "description": ""
+                },
+                "total": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "size": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "current": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "orders": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369890",
+                    "description": "com.baomidou.mybatisplus.core.metadata.OrderItem"
+                  },
+                  "description": ""
+                },
+                "optimizeCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "searchCount": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "optimizeJoinOfCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "countId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "maxLimit": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "records",
+                "total",
+                "size",
+                "current",
+                "orders",
+                "optimizeCountSql",
+                "searchCount",
+                "optimizeJoinOfCountSql",
+                "countId",
+                "maxLimit"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Page«UserVo»",
+          "displayName": "",
+          "id": "#/definitions/73369987",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "records": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369986",
+                    "description": "com.jujiu.vo.UserVo"
+                  },
+                  "description": ""
+                },
+                "total": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "size": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "current": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "orders": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369890",
+                    "description": "com.baomidou.mybatisplus.core.metadata.OrderItem"
+                  },
+                  "description": ""
+                },
+                "optimizeCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "searchCount": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "optimizeJoinOfCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "countId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "maxLimit": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "records",
+                "total",
+                "size",
+                "current",
+                "orders",
+                "optimizeCountSql",
+                "searchCount",
+                "optimizeJoinOfCountSql",
+                "countId",
+                "maxLimit"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Page«UserRoleVo»",
+          "displayName": "",
+          "id": "#/definitions/73369993",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "records": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369992",
+                    "description": "com.jujiu.vo.UserRoleVo"
+                  },
+                  "description": ""
+                },
+                "total": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "size": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "current": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "orders": {
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "$ref": "#/definitions/73369890",
+                    "description": "com.baomidou.mybatisplus.core.metadata.OrderItem"
+                  },
+                  "description": ""
+                },
+                "optimizeCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "searchCount": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "optimizeJoinOfCountSql": {
+                  "type": [
+                    "boolean",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "countId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "maxLimit": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "records",
+                "total",
+                "size",
+                "current",
+                "orders",
+                "optimizeCountSql",
+                "searchCount",
+                "optimizeJoinOfCountSql",
+                "countId",
+                "maxLimit"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Result«Page«Department»»",
+          "displayName": "",
+          "id": "#/definitions/73369892",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "编码 0-成功，其他数据失败"
+                },
+                "message": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "data": {
+                  "$ref": "#/definitions/73369891",
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "code",
+                "message",
+                "data"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Result«Page«Role»»",
+          "displayName": "",
+          "id": "#/definitions/73369978",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "编码 0-成功，其他数据失败"
+                },
+                "message": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "data": {
+                  "$ref": "#/definitions/73369977",
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "code",
+                "message",
+                "data"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Result«Page«User»»",
+          "displayName": "",
+          "id": "#/definitions/73369981",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "编码 0-成功，其他数据失败"
+                },
+                "message": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "data": {
+                  "$ref": "#/definitions/73369980",
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "code",
+                "message",
+                "data"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Result«Page«UserVo»»",
+          "displayName": "",
+          "id": "#/definitions/73369988",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "编码 0-成功，其他数据失败"
+                },
+                "message": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "data": {
+                  "$ref": "#/definitions/73369987",
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "code",
+                "message",
+                "data"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Result«Page«UserRoleVo»»",
+          "displayName": "",
+          "id": "#/definitions/73369994",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "编码 0-成功，其他数据失败"
+                },
+                "message": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "data": {
+                  "$ref": "#/definitions/73369993",
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "code",
+                "message",
+                "data"
+              ]
+            }
+          }
+        },
+        {
+          "name": "",
+          "displayName": "",
+          "id": "#/definitions/73369906",
+          "description": "",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {},
+              "x-apifox-orders": []
+            }
+          }
+        },
+        {
+          "name": "Result",
+          "displayName": "",
+          "id": "#/definitions/73369907",
+          "description": "通用返回对象",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "编码 0-成功，其他数据失败"
+                },
+                "message": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "data": {
+                  "$ref": "#/definitions/73369906",
+                  "description": ""
+                }
+              },
+              "x-apifox-orders": [
+                "code",
+                "message",
+                "data"
+              ]
+            }
+          }
+        },
+        {
+          "name": "DepartmentAddDto",
+          "displayName": "",
+          "id": "#/definitions/73369908",
+          "description": "com.jujiu.dto.add.DepartmentAddDto",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "departmentName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "部门名称"
+                },
+                "description": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "描述"
+                }
+              },
+              "x-apifox-orders": [
+                "departmentName",
+                "description"
+              ]
+            }
+          }
+        },
+        {
+          "name": "UserAddDto",
+          "displayName": "",
+          "id": "#/definitions/73369982",
+          "description": "com.jujiu.dto.add.UserAddDto",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "username": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "账号，登录名称"
+                },
+                "realName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "真名"
+                },
+                "nickName": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "花名"
+                },
+                "email": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "邮箱"
+                },
+                "phone": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "手机号码"
+                },
+                "departmentId": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "所属部门"
+                },
+                "entryTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "入职日期"
+                }
+              },
+              "x-apifox-orders": [
+                "username",
+                "realName",
+                "nickName",
+                "email",
+                "phone",
+                "departmentId",
+                "entryTime"
+              ]
+            }
+          }
+        },
+        {
+          "name": "UserRole",
+          "displayName": "",
+          "id": "#/definitions/73369995",
+          "description": "com.jujiu.entity.UserRole",
+          "schema": {
+            "jsonSchema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": ""
+                },
+                "userId": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "用户"
+                },
+                "roleId": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "description": "角色"
+                },
+                "createTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "创建时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                },
+                "updateTime": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "更新时间",
+                  "mock": {
+                    "mock": "@datetime"
+                  }
+                }
+              },
+              "x-apifox-orders": [
+                "id",
+                "userId",
+                "roleId",
+                "createTime",
+                "updateTime"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "responseCollection": [
+    {
+      "id": 3730815,
+      "createdAt": "2023-12-09T18:52:01.000Z",
+      "updatedAt": "2023-12-09T18:52:01.000Z",
+      "deletedAt": null,
+      "name": "根目录",
+      "type": "root",
+      "description": "",
+      "children": [],
+      "auth": {},
+      "projectId": 3731620,
+      "projectBranchId": 0,
+      "parentId": 0,
+      "createdById": 598226,
+      "updatedById": 598226,
+      "items": []
+    }
+  ],
+  "environments": [],
+  "commonScripts": [],
+  "globalVariables": [],
+  "commonParameters": null,
+  "projectSetting": {
+    "id": "3158697",
+    "auth": {},
+    "servers": [
+      {
+        "id": "default",
+        "name": "默认服务"
+      }
+    ],
+    "gateway": [],
+    "language": "zh-CN",
+    "apiStatuses": [
+      "developing",
+      "testing",
+      "released",
+      "deprecated"
+    ],
+    "mockSettings": {},
+    "preProcessors": [],
+    "postProcessors": [],
+    "advancedSettings": {},
+    "initialDisabledMockIds": [],
+    "cloudMock": {
+      "security": "free",
+      "enable": false,
+      "tokenKey": "apifoxToken"
+    }
+  }
+}
