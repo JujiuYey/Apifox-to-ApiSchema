@@ -1,11 +1,9 @@
 <template>
-  <div> index dsadfsdfsdafdfgdsfgdf </div>
+  <div>
+    <Codemirror />
+  </div>
 </template>
 
-<script setup lang="ts"></script>
-
-<style lang="less" scoped>
-  div {
-    background-color: #999;
-  }
-</style>
+<script lang="ts" setup>
+  import Codemirror from './Codemirror.vue';
+</script>

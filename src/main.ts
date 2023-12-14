@@ -6,7 +6,7 @@ import router from '@/router/index';
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
 
-import '@/styles/index.css';
+import 'virtual:uno.css';
 
 const app = createApp(App);
 app.use(store);

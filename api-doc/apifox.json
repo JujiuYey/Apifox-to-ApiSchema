@@ -1,5 +1,4 @@
 {
-
   "apiCollection": [
     {
       "name": "根目录",
@@ -340,7 +339,6 @@
       ]
     }
   ],
-
   "schemaCollection": [
     {
       "name": "根目录",
@@ -1782,56 +1780,5 @@
         }
       ]
     }
-  ],
-  "responseCollection": [
-    {
-      "id": 3730815,
-      "createdAt": "2023-12-09T18:52:01.000Z",
-      "updatedAt": "2023-12-09T18:52:01.000Z",
-      "deletedAt": null,
-      "name": "根目录",
-      "type": "root",
-      "description": "",
-      "children": [],
-      "auth": {},
-      "projectId": 3731620,
-      "projectBranchId": 0,
-      "parentId": 0,
-      "createdById": 598226,
-      "updatedById": 598226,
-      "items": []
-    }
-  ],
-  "environments": [],
-  "commonScripts": [],
-  "globalVariables": [],
-  "commonParameters": null,
-  "projectSetting": {
-    "id": "3158697",
-    "auth": {},
-    "servers": [
-      {
-        "id": "default",
-        "name": "默认服务"
-      }
-    ],
-    "gateway": [],
-    "language": "zh-CN",
-    "apiStatuses": [
-      "developing",
-      "testing",
-      "released",
-      "deprecated"
-    ],
-    "mockSettings": {},
-    "preProcessors": [],
-    "postProcessors": [],
-    "advancedSettings": {},
-    "initialDisabledMockIds": [],
-    "cloudMock": {
-      "security": "free",
-      "enable": false,
-      "tokenKey": "apifoxToken"
-    }
-  }
+  ]
 }
